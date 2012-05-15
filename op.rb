@@ -28,7 +28,7 @@ class Op
 
   def say_op
     system("clear")
-    @array.each {|v| print v ; v = " " + v }
+    @array.map! {|v| print v ; v = " " + v }
     sleep 0.5
   end
 end
